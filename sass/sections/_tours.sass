@@ -1,0 +1,53 @@
+.tours
+
+    &__types
+        display: flex
+        width: 1200px
+        justify-content: space-around
+        padding: 0 130px
+
+    &__type:nth-child(1)
+        padding-left: 60px
+
+    &__type:nth-child(3)
+        padding-left: 60px
+
+    &__type > img
+        height: 35px
+        width: 35px
+        border-radius: 30px
+        margin-left: auto
+
+    &__type:hover
+        background-color: #006BB9
+        color: white
+
+    &__grid
+        display: grid
+        grid-template-columns: repeat(2, 45%)
+        grid-gap: 4% 10%
+        justify-content: center
+        padding: 40px 18px 212px 18px
+
+    &__grid > div
+        max-width: 520px
+        min-height: 374px
+
+    &__grid > div > img
+        height: 213px
+
+.tours__type,
+.credit__item-head
+    display: flex
+    justify-content: center
+    align-items: center
+    min-width: 217px
+    min-height: 46px
+    padding: 0 25px
+    border: 1px solid #006BB9
+    box-sizing: border-box
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18)
+    border-radius: 70px 0px
+    font-style: italic
+    font-weight: 700
+    font-size: 15px
