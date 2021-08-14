@@ -572,7 +572,7 @@ h4 {
   display: grid;
   -ms-grid-columns: (45%)[2];
       grid-template-columns: repeat(2, 45%);
-  grid-gap: 4% 10%;
+  grid-gap: 4% 15%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -585,7 +585,11 @@ h4 {
 }
 
 .tours__grid > div > img {
-  height: 213px;
+  max-height: 213px;
+}
+
+.tours__review {
+  max-width: 520px;
 }
 
 .tours__type,
