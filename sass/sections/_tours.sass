@@ -4,7 +4,6 @@
         display: flex
         width: 1200px
         justify-content: space-around
-        padding: 0 130px
 
     &__type:nth-child(1)
         padding-left: 60px
@@ -25,19 +24,23 @@
     &__grid
         display: grid
         grid-template-columns: repeat(2, 45%)
-        grid-gap: 4% 15%
+        grid-gap: 50px 110px
         justify-content: center
-        padding: 40px 18px 212px 18px
+        padding: 40px 10px 212px 10px
 
-    &__grid > div
+    &__block
+        min-height: 375px
+        padding-bottom: 10px
+
+    &__block > img
+        height: 215px
+
+    &__block,
+    &__review,
+    &__element,
+    &__element p
         max-width: 520px
-        min-height: 374px
 
-    &__grid > div > img
-        max-height: 213px
-
-    &__review
-        max-width: 520px
 .tours__type,
 .credit__item-head
     display: flex
