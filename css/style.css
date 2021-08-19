@@ -313,6 +313,12 @@ p {
   padding-top: 12px;
 }
 
+.grid__review-top > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .grid__review h4 {
   max-width: 100%;
   margin: 0 0 7px 0;
@@ -338,6 +344,17 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.grid__element-down a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.grid__element-down > div {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .grid__element-down div {
@@ -583,11 +600,33 @@ h4 {
   display: grid;
   -ms-grid-columns: (45%)[2];
       grid-template-columns: repeat(2, 45%);
-  grid-gap: 50px 110px;
+  grid-gap: 36px 110px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px 10px 212px 10px;
+  padding: 36px 10px 188px 10px;
+}
+
+.tours__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tours__down > a {
+  padding: 14px 33px;
+}
+
+.tours__down > div {
+  padding-top: 14px;
+  margin-right: 81px;
+}
+
+.tours__button {
+  min-width: 180px;
 }
 
 .tours__block {
@@ -597,6 +636,15 @@ h4 {
 
 .tours__block > img {
   height: 215px;
+}
+
+.tours__element > p {
+  min-height: 50px;
+  width: 500px;
+}
+
+.tours__review {
+  padding: 6px 20px 13px 15px;
 }
 
 .tours__block, .tours__review, .tours__element,
@@ -627,6 +675,53 @@ h4 {
   font-style: italic;
   font-weight: 700;
   font-size: 15px;
+}
+
+.crouise__h1 {
+  height: 95px;
+}
+
+.crouise__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 27px;
+}
+
+.crouise__type {
+  padding-left: 55px;
+}
+
+.crouise__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1080px;
+  height: 173px;
+  padding: 28px 89px 28px 89px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.11);
+  border-radius: 30px;
+}
+
+.crouise__text {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
 }
 
 .medical__info {

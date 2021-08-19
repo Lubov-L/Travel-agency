@@ -24,9 +24,23 @@
     &__grid
         display: grid
         grid-template-columns: repeat(2, 45%)
-        grid-gap: 50px 110px
+        grid-gap: 36px 110px
         justify-content: center
-        padding: 40px 10px 212px 10px
+        padding: 36px 10px 188px 10px
+
+    &__down
+        display: flex
+        justify-content: flex-start
+
+    &__down > a
+        padding: 14px 33px
+
+    &__down > div
+        padding-top: 14px
+        margin-right: 81px
+
+    &__button
+        min-width: 180px
 
     &__block
         min-height: 375px
@@ -34,6 +48,13 @@
 
     &__block > img
         height: 215px
+
+    &__element > p
+        min-height: 50px
+        width: 500px
+
+    &__review
+        padding: 6px 20px 13px 15px
 
     &__block,
     &__review,
@@ -56,3 +77,35 @@
     font-style: italic
     font-weight: 700
     font-size: 15px
+
+.crouise
+
+    &__h1
+        height: 95px
+
+    &__container
+        display: flex
+        justify-content: center
+        padding-bottom: 27px
+
+    &__type
+        padding-left: 55px
+
+    &__block
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 1080px
+        height: 173px
+        padding: 28px 89px 28px 89px
+        background: #FFFFFF
+        border: 1px solid rgba(0, 0, 0, 0.04)
+        box-sizing: border-box
+        box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.11)
+        border-radius: 30px
+
+    &__text
+        font-style: italic
+        font-weight: 300
+        font-size: 18px
+        text-align: center
