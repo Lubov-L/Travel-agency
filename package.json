@@ -1,23 +1,31 @@
 {
   "name": "travel-agency",
-  "version": "1.0.0",
-  "description": "First project",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "swiper": "^7.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lubov-L/Travel-agency.git"
-  },
-  "author": "Lubov Burbygina",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Lubov-L/Travel-agency/issues"
-  },
-  "homepage": "https://github.com/Lubov-L/Travel-agency#readme",
   "devDependencies": {
-    "webpack": "^5.51.1",
-    "webpack-cli": "^4.8.0"
+    "vite": "^2.5.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
