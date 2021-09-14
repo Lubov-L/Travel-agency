@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 /sass
+.idea
+/css/style.css.maps
 .pnp.js
 /package-lock.json
 
