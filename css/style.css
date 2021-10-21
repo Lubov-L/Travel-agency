@@ -71,15 +71,10 @@ p {
   margin: 0;
 }
 
-.page__intro {
+.page {
   margin: 0 auto;
 }
 .page__cover {
-  width: 100%;
-  height: 200px;
-}
-.page__intro img {
-  object-fit: cover;
   width: 100%;
   height: 200px;
 }
@@ -89,6 +84,12 @@ p {
 .page__h1 {
   letter-spacing: 1px;
   margin: 0 0 7px 0;
+}
+
+.page img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
 }
 
 .page__heading,
@@ -204,13 +205,6 @@ p {
   font-style: normal;
   margin: 0 0 6px 0;
 }
-.main__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
-  grid-gap: 60px;
-  justify-content: center;
-  padding: 50px 10px 32px 10px;
-}
 
 .main__block,
 .tours__block,
@@ -222,7 +216,16 @@ p {
   padding-bottom: 75px;
 }
 
-.grid__block {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap: 60px;
+  justify-content: center;
+  padding: 50px 10px 32px 10px;
+}
+
+.grid__block,
+.tours__block {
   max-width: 350px;
   min-height: 340px;
   border-radius: 30px;
@@ -230,64 +233,92 @@ p {
   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.19);
   font-size: 14px;
 }
-.grid__block img {
+
+.grid__block img,
+.tours__block img {
   object-fit: cover;
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 30px 30px 0 0;
   width: 100%;
   height: 200px;
 }
-.grid__review {
+
+.grid__review,
+.tours__review {
   display: flex;
   flex-direction: column;
   min-height: 138px;
   max-width: 350px;
-  padding: 4px 9px 0px 13px;
+  padding: 4px 9px 0 13px;
 }
-.grid__review-top {
+
+.grid__review-top,
+.tours__review-top {
   display: flex;
   justify-content: space-between;
   max-width: 520px;
   padding-top: 12px;
 }
-.grid__review-top > div {
+
+.grid__review-top > div,
+.tours__review-top > div {
   display: flex;
 }
-.grid__review h4 {
+
+.grid__review h4,
+.tours__review h4 {
   max-width: 100%;
   margin: 0 0 7px 0;
   font-size: 17px;
   font-weight: 500;
 }
-.grid__review p {
+
+.grid__review p,
+.tours__review p {
   max-width: 309px;
   margin-bottom: 8px;
 }
-.grid__element {
+
+.grid__element,
+.tours__element {
   width: 100%;
   align-self: flex-end;
 }
-.grid__element-down {
+
+.grid__element-down,
+.tours__down {
   display: flex;
   justify-content: space-between;
 }
-.grid__element-down a {
+
+.grid__element-down a,
+.tours__down a {
   align-self: center;
 }
-.grid__element-down > div {
+
+.grid__element-down > div,
+.tours__down > div {
   align-self: flex-start;
 }
-.grid__element-down div {
+
+.grid__element-down div,
+.tours__down div {
   font-size: 18px;
   font-weight: 500;
   padding: 7px 3px;
 }
-.grid__element div {
+
+.grid__element div,
+.tours__element div {
   display: flex;
 }
-.grid__count {
+
+.grid__count,
+.tours__count {
   margin-left: 8px;
 }
-.grid__button {
+
+.grid__button,
+.tours__button {
   min-height: 37px;
   max-width: 138px;
   border: 1px solid #000000;
@@ -296,13 +327,16 @@ p {
   font-size: 12px;
   padding: 11px 33px;
 }
+
 .grid__button:hover {
   background-color: black;
   color: white;
 }
 
 .grid__review-top img,
-.grid__element img {
+.grid__element img,
+.tours__review-top img,
+.tours__element img {
   width: 15px;
   height: 15px;
   margin-right: 3px;
@@ -535,22 +569,22 @@ h4 {
   font-size: 15px;
 }
 
-.crouise__h1 {
+#cruise__h1 {
   height: 95px;
 }
-.crouise__container {
+#cruise__container {
   display: flex;
   justify-content: center;
   padding-bottom: 27px;
 }
-.crouise__type {
+#cruise__type {
   padding-left: 55px;
 }
-.crouise__block {
+#cruise__block {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1080px;
+  width: 90%;
   height: 173px;
   padding: 28px 89px 28px 89px;
   background: #FFFFFF;
@@ -559,7 +593,7 @@ h4 {
   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.11);
   border-radius: 30px;
 }
-.crouise__text {
+#cruise__text {
   font-style: italic;
   font-weight: 300;
   font-size: 18px;
